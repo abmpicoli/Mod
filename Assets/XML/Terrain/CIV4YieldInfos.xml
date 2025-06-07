@@ -1104,6 +1104,7 @@
 			<Description>TXT_KEY_YIELD_CHICKEN</Description>
 			<Civilopedia>TXT_KEY_YIELD_CHICKEN_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
@@ -1169,6 +1170,7 @@
 			<Description>TXT_KEY_YIELD_GEESE</Description>
 			<Civilopedia>TXT_KEY_YIELD_GEESE_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
@@ -1234,6 +1236,7 @@
 			<Description>TXT_KEY_YIELD_SHEEP</Description>
 			<Civilopedia>TXT_KEY_YIELD_SHEEP_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
@@ -1299,6 +1302,7 @@
 			<Description>TXT_KEY_YIELD_GOATS</Description>
 			<Civilopedia>TXT_KEY_YIELD_GOATS_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
@@ -1364,6 +1368,7 @@
 			<Description>TXT_KEY_YIELD_PIGS</Description>
 			<Civilopedia>TXT_KEY_YIELD_PIGS_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
@@ -1429,6 +1434,7 @@
 			<Description>TXT_KEY_YIELD_CATTLE</Description>
 			<Civilopedia>TXT_KEY_YIELD_CATTLE_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
@@ -1494,6 +1500,7 @@
 			<Description>TXT_KEY_YIELD_HORSES</Description>
 			<Civilopedia>TXT_KEY_YIELD_HORSES_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<bLivestock>1</bLivestock>
 			<Prices>
