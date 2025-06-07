@@ -7240,6 +7240,66 @@
 			<Button>,Art/colonization_promotions_atlas.dds,6,8</Button>
 		</PromotionInfo>
 		<PromotionInfo>
+			<Type>PROMOTION_FORCED_MARCH1_SEASONED_SCOUT</Type>
+			<Description>March of the Seasoned Scout</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereq>NONE</PromotionPrereq>
+			<PromotionPrereqOr1>NONE</PromotionPrereqOr1>
+			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
+			<bLeader>0</bLeader>
+			<bBlitz>0</bBlitz>
+			<bAmphib>0</bAmphib>
+			<bRiver>0</bRiver>
+			<bEnemyRoute>0</bEnemyRoute>
+			<bAlwaysHeal>0</bAlwaysHeal>
+			<bHillsDoubleMove>0</bHillsDoubleMove>
+			<iVisibilityChange>1</iVisibilityChange>
+			<iMovesChange>0</iMovesChange>
+			<iMoveDiscountChange>1</iMoveDiscountChange>
+			<iWithdrawalChange>0</iWithdrawalChange>
+			<iCargoChange>0</iCargoChange>
+			<iBombardRateChange>0</iBombardRateChange>
+			<iEnemyHealChange>0</iEnemyHealChange>
+			<iNeutralHealChange>0</iNeutralHealChange>
+			<iFriendlyHealChange>0</iFriendlyHealChange>
+			<iSameTileHealChange>0</iSameTileHealChange>
+			<iAdjacentTileHealChange>0</iAdjacentTileHealChange>
+			<iCombatPercent>0</iCombatPercent>
+			<iCityAttack>0</iCityAttack>
+			<iCityDefense>0</iCityDefense>
+			<iHillsAttack>0</iHillsAttack>
+			<iHillsDefense>0</iHillsDefense>
+			<iDomesticBonus>0</iDomesticBonus>
+			<iPillageChange>0</iPillageChange>
+			<iAnimalGoldChange>0</iAnimalGoldChange>
+			<iUpgradeDiscount>0</iUpgradeDiscount>
+			<iExperiencePercent>0</iExperiencePercent>
+			<TerrainAttacks/>
+			<TerrainDefenses/>
+			<FeatureAttacks/>
+			<FeatureDefenses/>
+			<UnitClassAttackMods/>
+			<UnitClassDefenseMods/>
+			<UnitCombatMods/>
+			<DomainMods/>
+			<TerrainDoubleMoves/>
+			<FeatureDoubleMoves/>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<bNotEarnedByXP>1</bNotEarnedByXP>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/colonization_promotions_atlas.dds,6,8</Button>
+		</PromotionInfo>
+		<PromotionInfo>
 			<Type>PROMOTION_FORCED_MARCH2</Type>
 			<Description>TXT_KEY_PROMOTION_FORCED_MARCH2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>

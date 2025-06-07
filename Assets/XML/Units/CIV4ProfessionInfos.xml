@@ -1056,6 +1056,7 @@
 			<FreePromotions/>
 			<YieldsProduced>
 				<YieldType>YIELD_BARLEY</YieldType>
+				<YieldType>YIELD_FOOD</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
@@ -5087,7 +5088,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>3</iCombatChange>
 			<iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
-			<iMovesChange>1</iMovesChange>
+			<iMovesChange>2</iMovesChange>
 			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
@@ -5112,7 +5113,7 @@
 				<YieldType>NONE</YieldType>
 			</YieldsConsumed>
 			<Button>,Art/Colonization_Civilizations_Leaders.dds,7,5</Button>
-			<bUseLbD>0</bUseLbD>
+			<bUseLbD>1</bUseLbD>
 			<ExpertUnit>UNITCLASS_SCOUT</ExpertUnit>
 			<iLbDLearnLevel>1</iLbDLearnLevel>
 		</ProfessionInfo>

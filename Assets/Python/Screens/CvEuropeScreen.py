@@ -859,8 +859,11 @@ class CvEuropeScreen:
 			elif (inputFnName.startswith(constStrWest)) :
 				screen.changeDDSGFC("DialogMap", "Art/Interface/Screens/Europe/DialogMapAmerica.dds")				
 			# R&R, vetiarvind, Navigation sectors - END
-				
+		elif (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CHARACTER):
+			self.handleKeyPressed(inputClass)
 		return 0
+	def handleKeyPressed(self,inputClass):
+		print "abmpicolikeypressed"  + str(inputClass) + "\n".join(dir(inputClass))
 
 	
 	def update(self, fDelta):
@@ -1007,7 +1010,10 @@ class CvEuropeScreen:
 			screen.setTableText("DialogTable", 2, iI, self.getTradeRouteIcon(pCity, pTransport), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 			screen.setImageButtonAt("DialogTable" + str(iI), "DialogTable", "", 0, iI * 32, self.DIALOG_TABLE_W, 32, WidgetTypes.WIDGET_GENERAL, self.SAIL_EXEC, iUnit)
 			iI += 1
+		screen.addEditBoxGFC("abmpicoliCustomCoordinates", 300, 300, 100, 40, WidgetTypes.WIDGET_GENERAL, 0, 0, FontTypes.TITLE_FONT)
+		screen.setEditBoxString("abmpicoliCustomCoordinates","custom x,y")
 		
+		print "abmpicoli-europe" + str(dir(screen))
 		
 	def sailToEastOrWest(self, iUnit, pPlot):
 		CyMessageControl().sendApplyEvent(CvUtil.EventDoEuropeScreen, EventContextTypes.EVENTCONTEXT_ALL, (SEND_TO_EAST_OR_WEST, iUnit, pPlot.getX(), pPlot.getY(), -1, -1, -1, -1, -1))

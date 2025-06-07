@@ -64975,7 +64975,12 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FORCED_MARCH1_SEASONED_SCOUT</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
@@ -65498,6 +65503,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_VETERAN2</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FORCED_MARCH1_SEASONED_SCOUT</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -80940,6 +80949,7 @@
 			<bMechanized>1</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>1</bHiddenNationality>
+			<bTroopShip>1</bTroopShip>
 			<bAlwaysHostile>1</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>

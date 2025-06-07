@@ -5272,6 +5272,9 @@ def abmpicoliAdjustments():
                             bypass=True
                             break
                         directions.append(thisPlot)
+                        if dx==0 or dy==0:
+                            directions.append(thisPlot)
+                            directions.append(thisPlot)
                         plotType = abmpicoliPlotTypeToNumber(thisPlot.getPlotType())
                         issue_score = issue_score + plotType*plotType
                 if bypass:

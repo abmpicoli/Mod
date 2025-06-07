@@ -1166,11 +1166,11 @@
 	<!-- XP cap begin -->
 	<Define>
 		<DefineName>ANIMAL_MAX_XP_VALUE</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>ESCAPE_MAX_XP_VALUE</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<!-- XP cap end -->
 	<Define>
