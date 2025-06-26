@@ -51,6 +51,7 @@ void CyTeamPythonInterface()
 		.def("getFatherPointCost", &CyTeam::getFatherPointCost, "int (int /*FatherTypes*/ eFather, int /*FatherPointTypes*/ ePointType)")
 		// TAC - Python Export - koma13 - START
 		.def("isFatherIgnore", &CyTeam::isFatherIgnore, "bool (int /*FatherTypes*/)")
+		.def("setFatherIgnore", &CyTeam::setFatherIgnore, "void (int /*FatherTypes*/, bool newValue)")
 		// TAC - Python Export - koma13 - END
 		.def("canConvinceFather", &CyTeam::canConvinceFather, "bool (int /*FatherTypes*/)")
 		.def("getFatherPoints", &CyTeam::getFatherPoints, "int (int /*FatherPointTypes*/ ePointType)")

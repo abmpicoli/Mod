@@ -102,7 +102,11 @@ def unitSelectedFeats(pUnit):
 def endTurnFeats(iPlayer):
 	player = gc.getPlayer(iPlayer)
 	if (player.shouldDisplayFeatPopup(FeatTypes.FEAT_EUROPE_SHIPS)):
-		if (player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE, DomainTypes.DOMAIN_SEA) > 0 and player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, DomainTypes.DOMAIN_SEA) == 0):
+		if ( 
+				(player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE, DomainTypes.DOMAIN_SEA) > 0 and player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, DomainTypes.DOMAIN_SEA) == 0)
+				or ( player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_IN_AFRICA, DomainTypes.DOMAIN_SEA) >0 and player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_TO_AFRICA, DomainTypes.DOMAIN_SEA) == 0)
+				or ( player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_IN_PORT_ROYAL, DomainTypes.DOMAIN_SEA) >0 and player.countNumTravelUnits(UnitTravelStates.UNIT_TRAVEL_STATE_TO_PORT_ROYAL, DomainTypes.DOMAIN_SEA) == 0)
+		):
 			popupInfo = CyPopupInfo()
 			popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_FEAT)
 			popupInfo.setData1(FeatTypes.FEAT_EUROPE_SHIPS)

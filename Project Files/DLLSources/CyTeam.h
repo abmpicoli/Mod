@@ -56,6 +56,7 @@ public:
 	int getFatherPoints(int /*FatherPointTypes*/ ePointType);
 	// TAC - Python Export - koma13 - START
 	bool isFatherIgnore(int /*FatherTypes*/ eFather) const;
+	void setFatherIgnore(int /*FatherTypes*/ eFather, bool newValue) const;
 	// TAC - Python Export - koma13 - END
 	bool canConvinceFather(int /*FatherTypes*/ eFather) const;
 	void changeFatherPoints(int /*FatherPointTypes*/ ePointType, int iChange);

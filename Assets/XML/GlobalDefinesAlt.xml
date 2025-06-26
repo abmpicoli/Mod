@@ -211,7 +211,7 @@
 	</Define>
 	<Define>
 		<DefineName>LBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
+		<iDefineIntVal>15</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>LBD_KI_MOD_EXPERT</DefineName>
@@ -495,11 +495,11 @@
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_BARGAIN_BUY_FAIL</DefineName>
-		<iDefineIntVal>200</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_BARGAIN_SELL_FAIL</DefineName>
-		<iDefineIntVal>200</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>CHANCE_IMPROVEMENT_ATTITUDE</DefineName>
@@ -531,11 +531,11 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_CHANCE_MISSIONING</DefineName>
-		<iDefineIntVal>25</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MAX_CHANCE_MISSIONING</DefineName>
-		<iDefineIntVal>90</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_MISSION</DefineName>
@@ -1204,11 +1204,11 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_CHANCE_TRADE_POST</DefineName>
-		<iDefineIntVal>25</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MAX_CHANCE_TRADE_POST</DefineName>
-		<iDefineIntVal>90</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<!-- Happiness vs Unhappiness - begin -->
 	<Define>

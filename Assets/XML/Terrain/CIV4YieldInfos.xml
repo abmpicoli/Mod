@@ -848,6 +848,7 @@
 			<Description>TXT_KEY_YIELD_PEAT</Description>
 			<Civilopedia>TXT_KEY_YIELD_PEAT_PEDIA</Civilopedia>
 			<bCargo>1</bCargo>
+			<bIgnoredForStorageCapacity>1</bIgnoredForStorageCapacity>
 			<bIsExportYield>1</bIsExportYield>
 			<Prices>
 				<iDomesticPriceBonus>2</iDomesticPriceBonus>

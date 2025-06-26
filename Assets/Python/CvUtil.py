@@ -119,7 +119,7 @@ class Profile:
 		fStartTime = self.timeStack.pop(len(self.timeStack) - 1)
 		strIndent = ""
 		for i in range(len(self.timeStack) - 1):
-			strIndent += "  "
+			strIndent += "	"
 		print "%s%s: %.3fs" % (strIndent, text, fEndTime - fStartTime)
 		
 class RedirectDebug:
@@ -157,8 +157,10 @@ def myExceptHook(type, value, tb):
 		sys.stdout.write(total)
 
 def pyPrint(stuff):
-	stuff = 'PY:' + stuff + "\n"
+	stuff = u'PY:' + unicode(stuff) + u"\n"
+	sys.stdout.write(' \n\n')
 	sys.stdout.write(stuff)
+	sys.stdout.write(' \n\n')
 
 def pyAssert(cond, msg):
 	if (cond==False):
@@ -208,7 +210,7 @@ def findInfoTypeNum(typeStr):
 def AdjustBuilding(add, all, BuildingIdx, pCity): # adds/removes buildings from a city
 	"Function for toggling buildings in cities"
 	if (BuildingIdx!= -1):
-		if (all):                #Add/Remove ALL
+		if (all):				 #Add/Remove ALL
 			for i in range(BuildingIdx):
 				pCity.setHasRealBuilding(i,add)
 		else:
@@ -220,7 +222,7 @@ def getIcon(iconEntry):						# returns Font Icons
 
 	iconEntry = iconEntry.lower()
 	if (FontIconMap.has_key(iconEntry)):
-		return 	FontIconMap.get(iconEntry)
+		return	FontIconMap.get(iconEntry)
 	else:
 		return (u"%c" %(191,))
 
@@ -370,7 +372,7 @@ def sortkey(word_and_number):
 	if language not in ["English", "German", "French", "Spanish", "Italian"]:
 		return word
 
-	# accents     ="ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûù" in cp1252
+	# accents	  ="ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûù" in cp1252
 	accents =localText.getText("TXT_KEY_ACCENT_SOUP", ())
 	replacement = localText.getText("TXT_KEY_ACCENT_SOUP_BASE_LOWERCASE_LETTER", ())
 

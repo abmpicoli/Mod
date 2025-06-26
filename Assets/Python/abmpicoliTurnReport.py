@@ -8,13 +8,26 @@ gc = CyGlobalContext()
     
     
 def report():
+    
     terrainCoast = TerrainTypes.TERRAIN_COAST
     terrainShallowCoast = TerrainTypes.TERRAIN_SHALLOW_COAST
     final_result=[]
     player=gc.getPlayer(0)
+    team = gc.getTeam(player.getTeam())
+    for foundingFather in range(gc.getNumFatherInfos()):
+        team.setFatherIgnore(foundingFather,False)
     europe = gc.getPlayer(player.getParent())
     game=gc.getGame()
     map=gc.getMap()
+    gy=map.getGridHeight()
+    gx=map.getGridWidth()
+    map_to_cover_back=[]
+    for my in range(gy):
+        for mx in range(gx):
+            mplot = map.plot(mx,my)
+            if not mplot.isRevealed(0,False):
+                mplot.setRevealed(0,True,True,-1)
+                map_to_cover_back.append(mplot)
     turn = game.getGameTurn()
     report_id=str(game.getGameTurn())+"-"+(str(datetime.datetime.now()).replace(' ','-'))
     report_id=report_id.encode('utf-8')
@@ -43,6 +56,7 @@ def report():
     for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
             ePlayer = gc.getPlayer(iLoopPlayer)
             player_gold=ePlayer.getGold()
+            player_gold = min(ePlayer.getGold(),ePlayer.AI_maxGoldTrade(0))
             is_myself = ePlayer.getID() == 0
             #if (player.isAlive() and player.isNative() and (gc.getTeam(player.getTeam()).isHasMet(activePlayer.getTeam()))):
             if ((ePlayer.isAlive() and ePlayer.isNative())) or is_myself:
@@ -65,7 +79,7 @@ def report():
                             demand_import_price=europe.getYieldSellPrice(demand)
                             demand_profit=max(0.1,(demand_local_price-demand_import_price)/demand_import_price)
                             demand_cost=demand_per_turn * demand_import_price * 20.0
-                            demand_score = demand_score * demand_profit * demand_cost / 200.0
+                            demand_score = demand_score * demand_profit / demand_cost * 200.0
                             demand_name=gc.getYieldInfo(demand).getDescription()
                             the_line= unicode(prefixdomestic)+u"\t"+u"\t".join((
                                 unicode(pLoopCity.getName()),
@@ -200,7 +214,7 @@ def report():
                         (str(dist).replace(".",",")),
                         nearest_unit_name,
                         str(visited),
-                        str(value/((dist*2.0+0.5)**1.1)).replace(".",","),
+                        str(value/((dist*2.0+0.5)**1.15)).replace(".",","),
                         str(gold_reserve).replace(".",","),
                         native_demand_name,
                         str(native_demand_buy_price),
@@ -209,4 +223,6 @@ def report():
                     print (prefix+u"\t"+line).encode('utf-8')
                     final_result.append(line)
                     (pLoopCity, iter) = ePlayer.nextCity(iter, False)
+    for plot in map_to_cover_back:
+        plot.setRevealed(0,False,False,-1)
     return final_result

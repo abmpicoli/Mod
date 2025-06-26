@@ -157,6 +157,17 @@ bool CyTeam::isFatherIgnore(int /*FatherTypes*/ eFather) const
 {
 	return m_pTeam ? m_pTeam->isFatherIgnore((FatherTypes) eFather) : false;
 }
+void CyTeam::setFatherIgnore(int /*FatherTypes*/ eFather, bool newValue) const
+{
+	if (m_pTeam ) {
+		
+		m_pTeam->setFatherIgnore((FatherTypes) eFather,newValue);
+		
+	};
+	return;
+	
+}
+
 // TAC - Python Export - koma13 - END
 
 bool CyTeam::canConvinceFather(int /*FatherTypes*/ eFather) const

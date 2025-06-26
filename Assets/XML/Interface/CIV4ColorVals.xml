@@ -456,7 +456,7 @@
 		</ColorVal>
 		<ColorVal>
 			<Type>COLOR_PLAYER_DARK_RED</Type>
-			<fRed>0.62</fRed>
+			<fRed>0.34</fRed>
 			<fGreen>0.00</fGreen>
 			<fBlue>0.00</fBlue>
 			<fAlpha>1.00</fAlpha>
@@ -470,9 +470,9 @@
 		</ColorVal>
 		<ColorVal>
 			<Type>COLOR_PLAYER_DARK_YELLOW</Type>
-			<fRed>0.87</fRed>
-			<fGreen>0.65</fGreen>
-			<fBlue>0.0</fBlue>
+			<fRed>1.0</fRed>
+			<fGreen>0.75</fGreen>
+			<fBlue>0.15</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
 		<ColorVal>
